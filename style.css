@@ -1,0 +1,48 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+@media (min-width:768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.bg-info {
+    background-color: #5FA8D3!important;
+}
+
+.bg-dark {
+    background-color: #1f1f1f!important;
+}
+
+.bg-primary {
+    background-color: #598392!important;
+}
+.btn-primary {
+    background-color: #2E4057;
+}
+
+.btn-primary:hover {
+    background-color: #2D848A;
+}
+
+.btn-dark:hover {
+    background-color: #003249;
+}
+
+.bg-primary a {
+    text-decoration: none;
+}

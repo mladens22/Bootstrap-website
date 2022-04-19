@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap"
+            rel="stylesheet">
+        <link
+            href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css'
+            rel='stylesheet'/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Coding Bootcamp</title>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg py-3 bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    FrontEnd Bootcamp
+                </a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#learn" class="nav-link">What You'll Learn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#questions" class="nav-link">Questions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#instructors" class="nav-link">Instructors</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+        <section
+            class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div>
+                        <h1>Become a
+                            <span class="text-warning">FrontEnd developer</span></h1>
+                        <p class="lead my-4">
+                            We focus on teaching our students the fundamentals of the latest and greatest
+                            technologies to prepare them for their first dev role
+                        </p>
+                        <button
+                            class="btn btn-primary btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#enroll">
+                            Start the Enrollment
+                        </button>
+                    </div>
+                    <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-info text-light p-5">
+            <div class="container">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
+
+                    <div class="input-group news-input">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-dark btn-lg" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="container">
+                <div class="row text-center g-4">
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-laptop"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Virtual</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Iure, quas quidem possimus dolorum esse eligendi?</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-secondary text-light">
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-person-square"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Hybrid</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Iure, quas quidem possimus dolorum esse eligendi?</p>
+                                <a href="#" class="btn btn-dark active">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+
+                                <div class="h1 mb-3">
+                                    <i class="bi bi-journal-code"></i>
+                                </div>
+                                <h3 class="card-title mb-3">Code</h3>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Iure, quas quidem possimus dolorum esse eligendi?</p>
+                                <a href="#" class="btn btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="p-5 mb-5">
+            <div class="container">
+                <div class="row align-items center justify-content-between">
+                    <div class="col-md">
+                        <img src="img/fundamentals.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>Learn The Fundamentals</h2>
+                        <p class="lead">
+                            In this course, we will learn the basic tools that every web page coder needs to
+                            know.
+                        </p>
+                        <p>
+                            Learn to Code HTML & CSS is a simple and comprehensive guide dedicated to
+                            helping beginners learn HTML and CSS. Outlining the fundamentals, this guide
+                            works through all common elements of front-end design and development.
+                        </p>
+                        <a href="#" class="btn btn-outline-info mt-3">
+                            <i class="bi bi-chevron-bar-right"></i>
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="learn" class="p-5 bg-dark text-light">
+            <div class="container">
+                <div class="row align-items center justify-content-between">
+                    <div class="col-md p-5">
+                        <h2>Learn React
+                        </h2>
+                        <p class="lead">
+                            This tutorial doesn’t assume any existing React knowledge.
+
+                        </p>
+                        <p>
+                            We will build a small game during this tutorial. You might be tempted to skip it
+                            because you’re not building games — but give it a chance. The techniques you’ll
+                            learn in the tutorial are fundamental to building any React app, and mastering
+                            it will give you a deep understanding of React.
+                        </p>
+                        <a href="#" class="btn btn-outline-success mt-3">
+                            <i class="bi bi-chevron-compact-right"></i>
+                            Read More
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <img src="img/react.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Question Accordion -->
+        <section id="questions" class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="questions">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#question-one">
+                                How long do I have access to the course?
+                            </button>
+                        </h2>
+                        <div
+                            id="question-one"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#questions">
+                            <div class="accordion-body">
+                                All course purchases are for lifetime access. Do it when ever you want. It will
+                                always be yours.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#question-two">
+                                Is this a subscription?
+                            </button>
+                        </h2>
+                        <div
+                            id="question-two"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#questions">
+                            <div class="accordion-body">
+                                No. We don't like subscriptions so we offer all our courses with no strings
+                                attached. Pay once, own the course forever!
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#question-three">
+                                What do I need to do your courses?
+                            </button>
+                        </h2>
+                        <div
+                            id="question-three"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#questions">
+                            <div class="accordion-body">
+                                All you need is a computer, access to the internet and a willingness to learn.
+                                Everything else, we'll walk you through in the course. There is no paid software
+                                required.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#question-four">
+                                I've never learnt to program, can I really become a web developer?
+                            </button>
+                        </h2>
+                        <div
+                            id="question-four"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#questions">
+                            <div class="accordion-body">
+                                Yes. We've had students as young as 11 and as old as 85. We've had students who
+                                are complete beginners. We've had thousands of students go on to get a job in
+                                tech companies like Apple, Google and Facebook. Anything that's worth doing is
+                                not easy, so programming is not easy but it's also not impossible.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#question-five">
+                                Does the sale apply to frontend.com courses?
+                            </button>
+                        </h2>
+                        <div
+                            id="question-five"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#questions">
+                            <div class="accordion-body">
+                                The sales are only for our courses on Udemy. But the courses are exactly the
+                                same on Udemy and here on codecamp.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instructors" class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-white">Our Instructors</h2>
+                <p class="lead text-center text-white mb-5">
+                    Our instructors all have 10+ years working as a web developers in the industry
+                </p>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img
+                                    src="https://randomuser.me/api/portraits/men/13.jpg"
+                                    class="rounded-circle mb-3"
+                                    alt="">
+                                <h3 class="card-title mb-3">Toby Magana</h3>
+                                <p class="card-text">An experienced supply chain professional providing a
+                                    positive learning experience through practical examples from his more than 25
+                                    years.</p>
+                                <a href="#">
+                                    <i class="bi bi-twitter text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-facebook text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-instagram text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-linkedin text-dark mx-1"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img
+                                    src="https://randomuser.me/api/portraits/men/17.jpg"
+                                    class="rounded-circle mb-3"
+                                    alt="">
+                                <h3 class="card-title mb-3">Conall Rodrigues</h3>
+                                <p class="card-text">An experienced consultant in the level of Supply Chain
+                                    Management and marketing, occupied with professionalizing processes and
+                                    activities.</p>
+                                <a href="#">
+                                    <i class="bi bi-twitter text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-facebook text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-instagram text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-linkedin text-dark mx-1"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img
+                                    src="https://randomuser.me/api/portraits/women/39.jpg"
+                                    class="rounded-circle mb-3"
+                                    alt="">
+                                <h3 class="card-title mb-3">Chanelle Mid
+                                </h3>
+                                <p class="card-text">She worked as the head teaching assistant for the computer
+                                    science department's web development course, leading a staff of over 20 TAs</p>
+                                <a href="#">
+                                    <i class="bi bi-twitter text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-facebook text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-instagram text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-linkedin text-dark mx-1"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img
+                                    src="https://randomuser.me/api/portraits/men/44.jpg"
+                                    class="rounded-circle mb-3"
+                                    alt="">
+                                <h3 class="card-title mb-3">Cayson Ahmad
+                                </h3>
+                                <p class="card-text">He was heavily involved in projects related to the
+                                    scalability and infrastructure of Uber's backend systems. Always eager to learn
+                                    new stuff.</p>
+                                <a href="#">
+                                    <i class="bi bi-twitter text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-facebook text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-instagram text-dark mx-1"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="bi bi-linkedin text-dark mx-1"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md">
+                        <h2 class="text-center mb-4">Contact Info</h2>
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Main Location:</span>
+                                Mountain View, CA, US
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Enrollment Phone:</span>
+                                (211) 842-3579
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Student Phone:</span>
+                                (222) 111-9765
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Enrollment Email:</span>
+                                join@bootcamp.org
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Student Email:</span>
+                                student@bootcamp.org
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="p-5 bg-dark text-white text-center position-relative">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2022 Mladen</p>
+
+                <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                    <i class="bi bi-arrow-up-circle h1"></i>
+                </a>
+            </div>
+        </footer>
+
+        <div
+            class="modal fade"
+            id="enroll"
+            tabindex="-1"
+            aria-labelledby="enrollLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your information</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">Fill out this form and we will get back to you</p>
+                        <form >
+                            <div class="mb-3">
+                                <label for="first-name" class="col-form-label">First Name:
+                                </label>
+                                <input type="text" class="form-control" id="first-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="last-name" class="col-form-label">Last Name:
+                                </label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email:
+                                </label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label">Phone:
+                                </label>
+                                <input type="phone" class="form-control" id="phone">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
+
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibWxhZGVuMjIiLCJhIjoiY2wyNTc0bThnMjZvZjNjbWs5b3M1NzJwdCJ9.m33I6-_1Kl' +
+                    'g2W8BQ1EQq2w';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [
+                    -71.060982, 42.35725
+                ],
+                zoom: 18
+            });
+        </script>
+
+    </body>
+</html>
